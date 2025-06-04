@@ -11,8 +11,8 @@ func main() {
 
 	var nomeArquivo string = "main.go";
 
-	for i := 4; i < 10; i++ {
-		pasta := ("../ex00" + strconv.Itoa(i))
+	for i := 1; i < 10; i++ {
+		pasta := ("../../level3/ex00" + strconv.Itoa(i))
 		err := os.MkdirAll(pasta, os.ModePerm);
 		if err != nil {
 			panic(err);
